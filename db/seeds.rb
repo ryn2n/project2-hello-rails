@@ -30,5 +30,6 @@ more_movies = [
 
 more_movies.each do |movie|
   # Movie.create!(movie)
-  Movie.find_or_create_by(title: movie[:title])
+  new_movie = Movie.find_or_create_by(title: movie[:title])
+  new_movie.update(release_date: movie[:release_date], rating: movie[:rating])
 end
