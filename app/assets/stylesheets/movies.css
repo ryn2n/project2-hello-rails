@@ -31,3 +31,13 @@ a {
         text-decoration: underline;
     }
 }
+
+.highlight-asc {
+    background-color: lightgreen;
+    color: green;
+}
+
+.highlight-desc {
+    background-color: lightcoral;
+    color: red;
+}
