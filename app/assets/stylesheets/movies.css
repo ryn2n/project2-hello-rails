@@ -1,0 +1,46 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+  
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
+
+#movies {
+    margin-top: 20px;
+}
+
+h1 {
+    color: #333;
+    font-family: Arial, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #007BFF;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.sort-indicator {
+    margin-left: 5px;
+}
+
+.sort-indicator.up {
+    color: green;
+}
+
+.sort-indicator.down {
+    color: red;
+}
+  
