@@ -9,8 +9,8 @@
     <thead>
       <tr>
         <th><%= link_to "Title", movies_path(sort_by: 'title', order: params[:order] == 'asc' ? 'desc' : 'asc') %></th>
-        <th>Rating</th>
-        <th>Release Date</th>
+        <th><%= link_to "Rating", movies_path(sort_by: 'rating', order: params[:order] == 'asc' ? 'desc' : 'asc') %></th>
+        <th><%= link_to "Release Date", movies_path(sort_by: 'release date', order: params[:order] == 'asc' ? 'desc' : 'asc') %></th>
         <th>Link to movie</th>
       </tr>
     </thead>
