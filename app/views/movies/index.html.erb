@@ -20,7 +20,7 @@
           <td><%= movie.title %></td>
           <td><%= movie.rating %></td>
           <td><%= movie.release_date.strftime("%B %d, %Y") if movie.release_date %></td>
-          <td><%= link_to "Show movie", movie(sort_by: 'title', order: params[:order] == 'asc' ? 'desc' : 'asc') %></td>
+          <td><%= link_to "Show movie", movie_path(movie, sort_by: 'title', order: params[:order] == 'asc' ? 'desc' : 'asc') %></td>
         </tr>
       <% end %>
     </tbody>
