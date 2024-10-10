@@ -1,11 +1,10 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
+LINK TO APP:
+https://container-ryann-b923715f539d.herokuapp.com/movies
 
 * Ruby version
+ruby "3.1.6"
 
 * System dependencies
 
