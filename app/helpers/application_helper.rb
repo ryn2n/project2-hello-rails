@@ -5,6 +5,7 @@ module ApplicationHelper
                 content_tag(:span, "↑", class: "sort-indicator asc")
             else
                 content_tag(:span, "↓", class: "sort-indicator desc")
+            end
         else
             ""
         end
