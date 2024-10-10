@@ -8,5 +8,5 @@
 
 <div>
   <%= link_to "Show this movie", @movie %> |
-  <%= link_to "Back to movies", movies_path %>
+  <%= link_to "Back to movies", movies_path(sort_by: params[:sort_by], order: params[:order] == 'asc' ? 'desc' : 'asc') %>
 </div>
