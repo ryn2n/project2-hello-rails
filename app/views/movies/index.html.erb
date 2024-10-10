@@ -8,7 +8,7 @@
   <table>
     <thead>
       <tr>
-        <th><%= link_to "Title", @movies(sort_by: 'title', order: params[:order] == 'asc' ? 'desc' : 'asc') %></th>
+        <th><%= link_to "Title", movies_path(sort_by: 'title', order: params[:order] == 'asc' ? 'desc' : 'asc') %></th>
         <th>Rating</th>
         <th>Release Date</th>
         <th>Link to movie</th>
