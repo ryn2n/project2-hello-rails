@@ -9,9 +9,17 @@
     <thead>
       <tr>
         <th class="<%= 'highlight-asc' if params[:sort_by] == 'title' && params[:order] == 'asc' %>
-                 <%= 'highlight-desc' if params[:sort_by] == 'title' && params[:order] == 'desc' %>"><%= link_to "Title #{sort_indicator('title').html_safe}", movies_path(sort_by: 'title', order: params[:order] == 'asc' ? 'desc' : 'asc') %></th>
-        <th><%= link_to "Rating #{sort_indicator('rating').html_safe}", movies_path(sort_by: 'rating', order: params[:order] == 'asc' ? 'desc' : 'asc') %></th>
-        <th><%= link_to "Release Date #{sort_indicator('release_date').html_safe}", movies_path(sort_by: 'release_date', order: params[:order] == 'asc' ? 'desc' : 'asc') %></th>
+                 <%= 'highlight-desc' if params[:sort_by] == 'title' && params[:order] == 'desc' %>">
+          <%= link_to "Title #{sort_indicator('title').html_safe}", movies_path(sort_by: 'title', order: params[:order] == 'asc' ? 'desc' : 'asc') %>
+        </th>
+        <th class="<%= 'highlight-asc' if params[:sort_by] == 'rating' && params[:order] == 'asc' %>
+        <%= 'highlight-desc' if params[:sort_by] == 'rating' && params[:order] == 'desc' %>">
+          <%= link_to "Rating #{sort_indicator('rating').html_safe}", movies_path(sort_by: 'rating', order: params[:order] == 'asc' ? 'desc' : 'asc') %>
+        </th>
+        <th class="<%= 'highlight-asc' if params[:sort_by] == 'release_date' && params[:order] == 'asc' %>
+        <%= 'highlight-desc' if params[:sort_by] == 'release_date' && params[:order] == 'desc' %>">
+          <%= link_to "Release Date #{sort_indicator('release_date').html_safe}", movies_path(sort_by: 'release_date', order: params[:order] == 'asc' ? 'desc' : 'asc') %>
+        </th>
         <th>Link to movie</th>
       </tr>
     </thead>
